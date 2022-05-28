@@ -1,0 +1,44 @@
+.slider{
+display: block;
+}
+
+@media (max-width:990px) {
+    .slider{
+        display: none !important;
+        }
+}
+
+.slider__page > div{
+    background-color: #00161f81;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 100px;
+
+}
+.slider__page::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 99%;
+    left: 0%;
+    background-color: white;
+}
+
+.slider__page > div img{
+width: 85%;
+}
+.back,.next{
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-size: 40px;
+}
+.next{
+    left: unset;
+    right: 60px;
+
+}

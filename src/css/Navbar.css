@@ -1,0 +1,140 @@
+.navbarr{
+    height: 60px;
+    width: 100%;
+    background-color:#00161f;
+    position: fixed ;
+    top: 0px;
+    z-index: 200;
+}
+
+.navbarr::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+}
+
+.navbar__container{
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar__logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo img{
+height: 70%;
+}
+
+.navbar__list{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    color: rgb(202, 202, 202);
+    font-size: 18px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.navbar__list > li{
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+.links{
+color: rgb(146, 146, 146) ;
+text-decoration: none;
+font-weight: bold;
+}
+.links:hover{
+color: rgb(255, 255, 255) ;
+}
+.active{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+@media (min-width:768px) and (max-width:990px) {
+    .navbar__list > li{
+        margin: 0px .7vw;
+        font-size: 15px;
+    }  
+    .block{
+        font-size: 15px !important;
+    }
+}
+
+.navbar__hamburger{
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 50px;
+    background-image: url(/public/images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    display: none;
+    transition: transform 1s;
+}
+.open{
+transform: rotate(90deg);
+}
+
+@media (max-width:767px) {
+    .navbar__hamburger{display: block;}
+    .navbar__list{display: none;}
+    .navbar__list__mobile{display: flex !important;}
+}
+.block{
+    color: rgb(146, 146, 146) ;
+    text-decoration: none;
+    cursor:default;
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.block:hover{
+    color: rgb(146, 146, 146) ;
+}
+
+
+.navbar__list__mobile{
+    padding: 20px 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 62px;
+    left: 100%;
+    background-color: #00161f;
+    color: white;
+    list-style: none;
+    height: calc(100vh - 62px);
+    width: 100vw;
+    transition: left 1s;
+    overflow: hidden;
+}
+.navbar__list__mobile  li{
+    margin: 20px 0px ;
+    padding:0px;
+}
+.showNav{
+    left: 0%;
+}
