@@ -31,6 +31,7 @@ class Navbar extends Component {
             </ul>
             <button className={`navbar__hamburger ${this.state.navToggle?"open":''}`} ref={this.myButton} onClick={this.openMobileNav}><img/></button>
           </div>
+          
           <ul className={`navbar__list__mobile ${this.state.navToggle?"showNav":''}`}>
                 <li><NavLink className='links' exact to="/MoviesLand/">Home</NavLink></li>
                 <li><NavLink className='links' to="/MoviesLand/movies">Movies</NavLink></li>
