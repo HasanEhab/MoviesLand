@@ -33,7 +33,7 @@ class Movies extends Component {
                 <div className='movies__content'>
                     {this.state.moviesDetails.length ? this.state.moviesDetails.map(movie=>{
                         return (
-                            <NavLink to={"/movie/:" + movie.id} key={movie.id} className="movies__card col-xl-3 col-lg-4 col-md-4 col-sm-6 col-10 offset-0 mt-5 px-4 pt-1">
+                            <NavLink to={"/MoviesLand/movie/:" + movie.id} key={movie.id} className="movies__card col-xl-3 col-lg-4 col-md-4 col-sm-6 col-10 offset-0 mt-5 px-4 pt-1">
                             <Moviecard name={movie.title} img={this.state.imgFirstPart+movie.poster_path} rate={movie.vote_average}/>
                             </NavLink>
                         )

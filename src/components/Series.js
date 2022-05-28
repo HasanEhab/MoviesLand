@@ -30,7 +30,7 @@ class Series extends Component {
                     {this.state.seriesDetails.length? this.state.seriesDetails.map(series=>{
                         return (
                             series.poster_path?
-                            <NavLink to={"/serie/:" + series.id} key={series.id} className="movies__card col-xl-3 col-lg-4 col-md-4 col-sm-6 col-10 offset-0 mt-5 px-4 pt-1">
+                            <NavLink to={"/MoviesLand/serie/:" + series.id} key={series.id} className="movies__card col-xl-3 col-lg-4 col-md-4 col-sm-6 col-10 offset-0 mt-5 px-4 pt-1">
                             <Moviecard  name={series.name} img={this.state.imgFirstPart+series.poster_path} rate={series.vote_average.toFixed(1)}/>
                             </NavLink>:''
                         )}):''}

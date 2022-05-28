@@ -33,7 +33,7 @@ class Actor extends Component {
                     {this.state.actorDetails.length? this.state.actorDetails.map(person=>{
                         return (
                             person.profile_path?
-                            <NavLink to={"/actor/:" + person.id} key={person.id} className="movies__card col-xl-3 col-lg-4 col-md-4 col-sm-6 col-10 offset-0 mt-5 px-4 pt-1">
+                            <NavLink to={"/MoviesLand/actor/:" + person.id} key={person.id} className="movies__card col-xl-3 col-lg-4 col-md-4 col-sm-6 col-10 offset-0 mt-5 px-4 pt-1">
                             <Moviecard name={person.name} img={this.state.imgFirstPart+person.profile_path} rate={person.known_for[0]?person.known_for[0].vote_average.toFixed(1):''}/>                         
                             </NavLink>:''
                         )
