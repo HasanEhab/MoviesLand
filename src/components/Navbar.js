@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "../css/Navbar.css"
 import { NavLink } from "react-router-dom";
 import { createRef } from 'react';
+import logo from "../images/logo.png"
 
 
 class Navbar extends Component {
@@ -20,7 +21,7 @@ class Navbar extends Component {
     return (
       <div className='navbarr'>
           <div className='navbar__container'>
-            <NavLink className='navbar__logo' to="/"><img src='/images/logo.png'/></NavLink>
+            <NavLink className='navbar__logo' to="/"><img src={logo}/></NavLink>
             <ul className='navbar__list'>
                 <li><NavLink className='links' exact to="/">Home</NavLink></li>
                 <li><NavLink className='links' to="/movies">Movies</NavLink></li>
