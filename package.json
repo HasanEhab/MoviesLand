@@ -2,7 +2,7 @@
   "name": "moviesland",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HassanEhab.github.io",
+  "homepage": "https://hasanehab.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
