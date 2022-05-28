@@ -21,13 +21,13 @@ class App extends Component{
     return (<div className='App'>
               <BrowserRouter>
                 <Navbar/>
-                  <Route path="/" exact component={Home} />
-                  <Route path="/series" exact component={Series} />
-                  <Route path="/movies" exact component={Movies} />
-                  <Route path="/actors" exact component={Actor} />
-                  <Route path="/movie/:id" exact component={MoviesDetails} />
-                  <Route path="/serie/:id" exact component={SeriesDetails} />
-                  <Route path="/actor/:id" exact component={ActorDetails} />
+                  <Route path="/MoviesLand/" exact component={Home} />
+                  <Route path="/MoviesLand/series" exact component={Series} />
+                  <Route path="/MoviesLand/movies" exact component={Movies} />
+                  <Route path="/MoviesLand/actors" exact component={Actor} />
+                  <Route path="/MoviesLand/movie/:id" exact component={MoviesDetails} />
+                  <Route path="/MoviesLand/serie/:id" exact component={SeriesDetails} />
+                  <Route path="/MoviesLand/actor/:id" exact component={ActorDetails} />
               </BrowserRouter>
             </div>     
     );
