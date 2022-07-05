@@ -38,7 +38,7 @@ class Home extends Component {
                     {this.state.allDetails.length? this.state.allDetails.map(movie=>{
                         return (
                             <NavLink to={movie.title?"/MoviesLand/movie/:" + movie.id:"/MoviesLand/serie/:" + movie.id} key={movie.id} className="movies__card col-xl-3 col-lg-4 col-md-4 col-sm-6 col-10 offset-0 mt-5 px-4 pt-1">
-                            <Moviecard  name={movie.title?movie.title:movie.name} img={this.state.imgFirstPart+movie.poster_path} rate={movie.vote_average}/>
+                            <Moviecard  name={movie.title?movie.title:movie.name} img={this.state.imgFirstPart+movie.poster_path} rate={movie.vote_average.toFixed(1)}/>
                             </NavLink>
                         )
                      }):''}
